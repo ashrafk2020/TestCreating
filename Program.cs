@@ -7,10 +7,20 @@ namespace _11new
     {
         static void Main(string[] args)
         {
-           PrintNewMassage("the new message here");
-           PrintNewMassage("i am ashraf");
-           PrintNewMassage("hello saif!");
-
+            var namesList = new List<string>();
+           dynamic myDynamicVariable = 5;
+           System.Console.WriteLine(myDynamicVariable);
+           myDynamicVariable = "ashraf";
+           System.Console.WriteLine(myDynamicVariable);
+           myDynamicVariable = new List<float>();
+           myDynamicVariable.Add(10f);
+           myDynamicVariable.Add(5.2f);
+           myDynamicVariable.Add(3.4f);
+    
+           foreach (var item in myDynamicVariable)
+           {
+                System.Console.WriteLine(item);
+           }
         }
 
 
